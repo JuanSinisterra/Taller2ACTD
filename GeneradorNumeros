@@ -1,0 +1,21 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+mu = 3
+sigma = 0.5 
+n=1000
+vals = np.random.logistic(loc=mu, scale=sigma, size=n)
+df = pd.DataFrame(vals)
+descriptivos=df.describe()
+
+
+count, bins, ignored = plt.hist(x=vals, bins=30)
+plt.title('Histograma de tiempos de servicio')
+plt.xlabel('Tiempos de servicio')
+plt.ylabel('Frecuencia')
+plt.show()
+
+
+
+
