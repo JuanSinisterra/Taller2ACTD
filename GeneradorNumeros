@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -19,5 +20,12 @@ plt.show()
 mu = 5
 sigma =2
 
+#CambioAriel
 
+mu = 10
+sigma =1
+n=1000
+vals = np.random.logistic(loc=mu, scale=sigma, size=n)
+df = pd.DataFrame(vals)
+descriptivos=df.describe()
 
