@@ -16,6 +16,8 @@ plt.xlabel('Tiempos de servicio')
 plt.ylabel('Frecuencia')
 plt.show()
 
+mu = 5
+sigma =2
 
 
 
